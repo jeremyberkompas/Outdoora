@@ -1,0 +1,376 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* width: 100vw; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+    --main-link-font-size: 1.5rem;
+}
+
+body {
+    background: white;
+    display: block;
+    /* width: 100%; */
+}
+
+/* .header-logo {
+    background: url(/images/Screen\ Shot\ 2020-07-19\ at\ 3.31.12\ PM.png);
+    background-position: center;
+    width: 30vw;
+    height: 10vh;
+} */
+
+/* .top-links {
+    float: right;
+    width: 30vw;
+    height: 10vh;
+    background: gray;
+} */
+
+.header-logo {
+    opacity: .8;
+    margin: 2em 0em 0em 1em;
+    background-image: url(/images/header-logo.png);
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 10vh;
+}
+
+header {
+    padding: .2em;
+    background: linear-gradient(0.16deg, rgba(75, 235, 82, 0.54) -5.98%, rgba(196, 196, 196, 0.08) 99.81%);
+    /* background-image: url(/images/Screen\ Shot\ 2020-07-19\ at\ 3.21.25\ PM.png); */
+    /* background-position: center center; */
+}
+
+h1 {
+    font-size: 6rem;
+    font-weight: 200;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20em;
+    /* width: 100vw; */
+    height: 90vh;
+    /* background: rgba(255, 0, 0, 0.644); */
+}
+
+.promo-blurb {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+    font-size: 2rem;
+    /* color: rgb(32, 32, 32); */
+    color: white;
+    font-weight: 70;
+}
+
+.two-choices {
+    padding: 1em;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-right: 1em;
+    margin-bottom: 4em;
+}
+
+.or {
+    font-size: var(--main-link-font-size);
+    margin: .3em;
+    color: rgb(8, 8, 8);
+}
+
+.signup {
+    font-size: var(--main-link-font-size);
+    padding: .02em;
+    font-weight: 70;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    height: 40px;
+    /* background: linear-gradient(310.27deg, #2EAC19 11.28%, rgba(165, 255, 151, 0.78) 88.95%); */
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    /* border-radius: 20px; */
+}
+
+.signup:hover {
+    cursor: pointer;
+    /* box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.63); */
+}
+
+.login {
+    margin: .1em;
+    font-size: var(--main-link-font-size);
+    color: white;
+    font-weight: 70;
+}
+
+.login:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.skip-div {
+    font-weight: 70;
+    color: white;
+    font-style: italic;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: var(--main-link-font-size);
+}
+
+.arrow {
+    width: 20px;
+    height: 20px;
+    background: rgb(0, 255, 42);
+    margin-left: 1em;
+    clip-path: polygon(29% 0, 77% 50%, 28% 100%, 0% 100%, 60% 52%, 0% 0%);
+}
+
+.header-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* width: 100vw; */
+    height: 10vh;
+    /* background: white;    */
+}
+
+.top-links {
+    font-size: var(--main-link-font-size);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 2em;
+}
+
+.top-links>p {
+    margin: 1em;
+}
+
+.about {
+    color: black;
+    font-weight: 70;
+    padding: .04em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--main-link-font-size);
+    /* margin-right: 1em; */
+}
+
+.about:hover {
+    color: white;
+}
+
+.account-div {
+    color: white;
+    font-weight: 70;
+    font-size: var(--main-link-font-size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    /* border-radius: 20px; */
+    /* background: linear-gradient(310.27deg, #2EAC19 11.28%, rgba(165, 255, 151, 0.78) 88.95%); */
+}
+
+.account-div:hover {
+    cursor: pointer;
+    /* box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.63); */
+}
+
+.hero-overlay {
+    /* background: linear-gradient(0.16deg, rgba(75, 235, 82, 0.54) -5.98%, rgba(196, 196, 196, 0.08) 99.81%); */
+    background-image: url(/images/Screen\ Shot\ 2020-07-19\ at\ 3.21.25\ PM.png);
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.h3 {
+    grid-column: 2/-1;
+    grid-row: 1;
+    padding-left: 2em;
+    font-size: 0rem;
+    font-weight: 70;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    width: 100vw;
+    height: 200px;
+    background: linear-gradient(0.16deg, rgb(68, 71, 69) -5.98%, rgb(196, 196, 196) 99.81%);
+}
+
+.navigation-headings {
+    grid-column: 2;
+    grid-row: 2/-1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 90vw;
+    margin-left: 1.3em;
+    font-weight: 300;
+    /* height: 10vh; */
+    /* background: red; */
+}
+
+.navigation-headings>p {
+    padding: 1em;
+    font-size: 1.4rem;
+}
+
+.navigation-headings>p:hover {
+    padding: 1em;
+    font-size: 1.4rem;
+    color: white;
+    cursor: pointer;
+    font-weight: 400;
+    border-bottom: 4px solid red;
+    /* background: rgba(46, 46, 46, 0.452); */
+}
+
+.nav-title-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100vw;
+    height: 10vh;
+    grid-column: 1/-1;
+    grid-row: 1/2;
+}
+
+form {
+    padding: 2em;
+}
+
+.black-area {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1em;
+    background: linear-gradient(0.16deg, rgb(46, 48, 47) -5.98%, rgb(124, 124, 124) 99.81%);
+    background-attachment: fixed;
+    color: white;
+}
+
+.video-cards {
+    border-radius: 2%;
+    margin: 2em;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    width: 300px;
+    height: 400px;
+    box-shadow: 0px 1px 5px 1px rgb(36, 36, 36);
+    background: rgb(61, 61, 61);
+}
+
+.video-cards:hover {
+    box-shadow: 0px 2px 15px 2px rgb(36, 36, 36);
+    background: rgb(183, 184, 181);
+    color: black;
+    transition: .9s;
+    cursor: pointer;
+}
+
+.video-thumbnail {
+    border-radius: 2%;
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/Screen\ Shot\ 2020-07-19\ at\ 4.42.36\ PM.png);
+    background-position: center;
+    grid-column: 1;
+    grid-row: 1/4;
+}
+
+.video-caption {
+    grid-column: 1;
+    grid-row: 4;
+    width: 100%;
+    height: 90%;
+    margin-top: .2em;
+    border-left: 2px solid rgb(228, 17, 17);
+    padding: .6em;
+    margin: .3em;
+    font-weight: 60;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background: linear-gradient(0.16deg, rgb(68, 71, 69) -5.98%, rgb(196, 196, 196) 99.81%);
+}
+
+.app-advert-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+h4 {
+    font-size: 2rem;
+    font-weight: 50;
+}
+
+.advert-nested-container {
+    margin-left: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.advert-nested-container>p {
+    color: rgb(56, 55, 55);
+}
+
+.pro {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 70;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 30px;
+    border-radius: 20px;
+    background: linear-gradient(305.04deg, #DF2D2D -12.7%, rgba(255, 159, 47, 0.98) 100%);
+}
+
+.app-advert {
+    background-image: url(/images/Screen\ Shot\ 2020-07-19\ at\ 4.33.47\ PM.png);
+    background-position: center;
+    background-size: contain;
+    border-radius: 25%;
+    width: 200px;
+    height: 200px;
+}
